@@ -1,0 +1,36 @@
+
+@import "variables";
+
+@mixin media ($screensize){
+  @if ($screensize == large){
+    @media (max-width: 990px) { @content };
+  }
+  @if ($screensize == medium){
+    @media (max-width: 768px) { @content };
+  }
+  @if ($screensize == small){
+    @media (max-width: 576px) { @content };
+  }
+}
+
+
+
+.open-toggle-button{
+  transform: rotate(-1620deg) scale(.7);
+  transform-origin: center;
+}
+
+.open-navbar{
+  background-color: rgba(#000,.7);
+}
+
+h3,h2,h5,a{
+  color: $link-color;
+}
+a:hover{
+  color: $yellow-color;
+}
+p{
+  color: darken($link-color, 10%);
+  font-size: 1.5rem;
+}

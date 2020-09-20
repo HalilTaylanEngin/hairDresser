@@ -1,0 +1,175 @@
+.open-toggle-button {
+  transform: rotate(-1620deg) scale(0.7);
+  transform-origin: center; }
+
+.open-navbar {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+h3, h2, h5, a {
+  color: #dfdfdf; }
+
+a:hover {
+  color: #cc8e35; }
+
+p {
+  color: #c6c6c6;
+  font-size: 1.5rem; }
+
+html {
+  scroll-behavior: smooth !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  font-size: 10px !important; }
+  html body {
+    background-color: #000; }
+
+section {
+  width: 100% !important;
+  min-height: 100vh; }
+
+@media (max-width: 990px) {
+  nav {
+    padding-left: 5px !important;
+    padding-right: 5px !important; }
+    nav ul {
+      width: 100%;
+      text-align: center;
+      min-height: 100vh; }
+      nav ul li {
+        line-height: 70px; } }
+nav .toggle-button {
+  color: #dfdfdf;
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  font-size: 1.6rem;
+  transition: all .5s;
+  display: none; }
+  nav .toggle-button:hover, nav .toggle-button:focus {
+    color: white;
+    border: none !important;
+    outline: none !important; }
+  @media (max-width: 990px) {
+    nav .toggle-button {
+      display: block !important; } }
+nav .navbar-brand {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 200 !important;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #dfdfdf !important;
+  transition: all 0.5s; }
+  nav .navbar-brand:hover {
+    color: white !important; }
+nav .nav-link {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 100 !important;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #dfdfdf !important;
+  transition: all 0.5s; }
+  nav .nav-link:hover {
+    color: white !important; }
+
+/* ------------------
+heroSection
+--------------------*/
+#heroSection {
+  position: relative;
+  background-image: url("../img/bg-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto; }
+  #heroSection .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+    #heroSection .overlay .hero-section-content {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 28rem; }
+      #heroSection .overlay .hero-section-content p {
+        font-size: 1.6rem; }
+
+/* ------------------
+servicesSection
+--------------------*/
+#servicesSection {
+  background-color: #cc8e35;
+  padding-top: 10rem; }
+  @media (max-width: 768px) {
+    #servicesSection {
+      padding-top: 4rem  !important; } }
+  #servicesSection .col-md-4 .img-overlay {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s; }
+    #servicesSection .col-md-4 .img-overlay:hover img {
+      transition: all .5s;
+      transform: scale(1.1); }
+    #servicesSection .col-md-4 .img-overlay .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.7); }
+      #servicesSection .col-md-4 .img-overlay .overlay:hover {
+        display: none; }
+
+/* ------------------
+modellerSection
+--------------------*/
+/* ------------------
+ourTeamSection
+--------------------*/
+#ourTeamSection {
+  background-color: #cc8e35; }
+  #ourTeamSection .card {
+    background-color: #000; }
+  #ourTeamSection .card-overlay {
+    overflow: hidden; }
+    #ourTeamSection .card-overlay .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      background-color: rgba(0, 0, 0, 0.7); }
+      #ourTeamSection .card-overlay .overlay a {
+        margin: 5rem; }
+        @media (max-width: 990px) {
+          #ourTeamSection .card-overlay .overlay a {
+            margin: 1rem; } }
+    #ourTeamSection .card-overlay:hover .overlay {
+      transition: all .5s;
+      top: 0px;
+      left: 0px; }
+
+#contactSection {
+  background-image: url("../img/bg-6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  #contactSection .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 150px; }
+    @media (max-width: 768px) {
+      #contactSection .overlay {
+        padding-top: 70px; } }
+
+/*# sourceMappingURL=main.css.map */
